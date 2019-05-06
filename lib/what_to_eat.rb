@@ -7,20 +7,25 @@ require 'uri'
 #1b. define API keys
 
 app_id = "26b201e9"
-app_key = "953e8d1f4d0fc6273d5471007e30f8f6"
+app_key = "" # you need to enter your api key here
 
 
 #2. make an HTTP GET request
-# result = Net::HTTP.get('www.edamam.com','/search?type=Feeds')
-# puts result
+
+#User Input
+puts "What type of diet? (high-protein / balanced / low-fat / low-carb ) "
+diet = gets.chomp || ""
+
+puts "What type of cuisine?"
+cuisine = gets.chomp
+
+puts "Max calories?"
+max_cal = gets.to_s.chomp
 
 
-
-
-
-uri = URI.parse("https://api.edamam.com/search?q=vegetarian&app_id=#{app_id}&app_key=#{app_key}&from=0&to=3&calories=591-722&health=alcohol-free")
+uri = URI.parse("https://api.edamam.com/search?q=vegetarian&app_id=#{app_id}&app_key=#{app_key}&from=0&to=3&calories=50-#{max_cal}&diet=#{diet}&cuisine=#{cuisine}")
 response = Net::HTTP.get_response(uri)
-puts response
+#puts response
 
 #puts response.code
 #puts response.body
