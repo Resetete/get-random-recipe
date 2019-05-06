@@ -6,7 +6,6 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    edamam-ruby (0.2.0)
     rake (10.5.0)
 
 PLATFORMS
@@ -14,7 +13,6 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
-  edamam-ruby
   rake (~> 10.0)
   what_to_eat!
 

@@ -21,6 +21,7 @@ Or install it yourself as:
 ## Usage
 
 Just run the script and the result will be two random recipes.
+You will be asked for the diet, type of cuisine, and max calories. 
 
 ## Development
 

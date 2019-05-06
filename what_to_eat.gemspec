@@ -5,23 +5,21 @@ require "what_to_eat/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "what_to_eat"
-  spec.version       = WhatToEat::0.0.0.
+  spec.version       =  "0.0.0"
   spec.authors       = ["Theresa"]
   spec.email         = ["tmannschatz@gmail.com"]
 
-  spec.summary       = "Gets you the latest recipe"
-  spec.description   = "This app allows you to get a random recipe. You can specify some ingredients or the dish type such as vegetarian"
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{"Gets you the latest recipe"}
+  spec.description   = %q{"This app allows you to get a random recipe. You can specify some ingredients or the dish type such as vegetarian"}
+  spec.homepage      = "https://github.com/Resetete/get-random-recipe"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-    spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+    spec.metadata["source_code_uri"] = "https://github.com/Resetete/get-random-recipe"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -38,7 +36,4 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "net/http" 
-  Spec.add_development_dependency "uri"
-"
 end
