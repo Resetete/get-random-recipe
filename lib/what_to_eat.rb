@@ -7,7 +7,7 @@ require 'uri'
 #1b. define API keys
 
 app_id = "26b201e9"
-app_key = "" # you need to enter your api key here
+app_key = "953e8d1f4d0fc6273d5471007e30f8f6"
 
 
 #2. make an HTTP GET request
